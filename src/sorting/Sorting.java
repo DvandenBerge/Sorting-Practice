@@ -17,12 +17,12 @@ public class Sorting {
         Turkey t3=new Turkey("Baster",3,5);
         
         Set treeSet1=new TreeSet();
-        treeSet1.add(t1);
-        treeSet1.add(t2);
         treeSet1.add(t3);
+        treeSet1.add(t1);
         treeSet1.add(t2);
         
         List<Turkey> list1=new ArrayList<Turkey>(treeSet1);
+        treeSet1=null;
         
         for(int i=0;i<list1.size();i++){
             System.out.println(list1.get(i).toString());
