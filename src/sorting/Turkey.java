@@ -86,9 +86,9 @@ public class Turkey implements Comparable<Turkey>{
  
     @Override
     public int compareTo(Turkey t){
-        final int BEFORE=-1;
+        final int BEFORE=1;
         final int EQUAL=0;
-        final int AFTER=1;
+        final int AFTER=-1;
         
         if(name.equals(t.getName()) && turkeyId==t.getTurkeyId() && featherCount==t.getFeatherCount()) return EQUAL;
         else if(turkeyId>t.getTurkeyId()) return BEFORE;
